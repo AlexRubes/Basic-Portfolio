@@ -1,0 +1,18 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  .button {
+    background-color: yellow;
+    padding: 10px;
+    border: 1px solid red;
+  }
+  .wrapper {
+    background-color: white;
+    margin: 0 auto;
+    width: 50%;
+    border: 1px solid red;
+  }
+  body {
+    background-color: blue;
+  }
