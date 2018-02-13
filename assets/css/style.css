@@ -1,78 +1,138 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  font-family: Arial;
-  padding: 20px;
   background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  width: 960px;
 }
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: white;
-}
-
-/* Style the top navigation bar */
 .nav {
-  overflow: hidden;
+  align-items: center;
   background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 960px;
+  z-index:3;
 }
-
-/* nav */
-.nav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
+.name {
+  background-color: white;
+  border:1px solid white;
+  color: black;
+  font-size: 24px;
+  padding: 14px;
+  width: 30%;
   text-align: center;
+}
+.tabs {
+  display: flex;
+  flex-direction: row;
+}
+.nav a {
+  color: #f2f2f2;
+  margin-right: 5px;
   padding: 14px 16px;
+  text-align: center;
   text-decoration: none;
 }
-
 /* Change color on hover */
 .nav a:hover {
   background-color: #ddd;
   color: black;
 }
-.left {   
-  float: left;
-  width: 70%;
-}
-.right {
-  float: right;
-  width: 25%;
-  background-color: #f1f1f1;
+.main{
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
 }
-.img {
-  background-color: #aaa;
-  width: 50%;
-  padding: 20px;
-}
-.tile {
+.left,form {   
   background-color: white;
-  padding: 20px;
   margin-top: 20px;
+  padding: 10px;
+  width: 650px;
+  
 }
-.main:after {
- content: "";
- display: table;
- clear: both;
+.headleft {
+  color: black;
+  font-size: 25px;
+  padding: 10px;
 }
-.foot {
-  padding: 20px;
+.profpic {
+  float: left;
+  padding: 10px 25px 10px 10px;
+}
+.details {
+  padding: 10px;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100px;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(70, 57, 57);
+}
+.right {
+  background-color: white;
+  height: 150px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 270px;
+}
+.headright {
+  color: black;
+  font-size: 20px;
+  padding: 10px 10px 20px 10px;
   text-align: center;
+}
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+.content {
+  background-color: white;
+  padding: 10px;
+  position: relative;
+}
+.tilename {
+  background-color: rgba(120, 120, 120, 0.5);
+  bottom: 0;
+  padding: 5px 15px 5px 15px;
+  position: absolute;
+  text-align: center;
+  width: 295px;
+}
+.foot { 
   background: #ddd;
-  margin-top: 20px;
+  margin-top: 10px;
+  text-align: center;
+  padding: 20px;
 }
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media (max-width: 960px) {
   .left, .right {   
-      width: 100%;
-      padding: 0;
+    padding: 0;
+    width: 100%;  
   }
 }
 

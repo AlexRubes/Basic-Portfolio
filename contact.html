@@ -3,38 +3,54 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title><Page Title></title>
+    <title>Alejandra's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="C:\Users\arubalcava\code\Basic-Portfolio\assets\css\style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
     <script src="main.js"></script>
 </head>
 <body>
-        <nav class="nav">
-                <a href="C:\Users\arubalcava\code\Basic-Portfolio\index.html">About</a> 
-                <a href="C:\Users\arubalcava\code\Basic-Portfolio\portfolio.html">Portfolio</a> 
-                <a href="C:\Users\arubalcava\code\Basic-Portfolio\contact.html">Contact</a> 
-            </nav>   
-            <div class="main">
-                <!--content-->
-                <section class="left">
-                    <div class="tile">
-                        <h2>Contact</h2>
-                        <p>I was born and raised in the southwest side of Chicago.</p>
-                    </div>
-                </section>
-           
-                <aside class="right">
-                    <div class="tile">
-                        <h4>Connect With Me</h4>
-                        <img src="C:\Users\arubalcava\code\Basic-Portfolio\assets\images\if_mark-github_298822.png">
-                        <img src="C:\Users\arubalcava\code\Basic-Portfolio\assets\images\if_square-linkedin_317725.png">
-                        <img src="C:\Users\arubalcava\code\Basic-Portfolio\assets\images\if_Stack_Overflow_1298710.png">
-                    </div>
-                </aside>
-            </div> 
-            <!--footer-->
-            <footer class="foot">
-                <p>Copyright 2018 Alejandra Rubalcava</p>         
-            </footer>
+    <!--nav-->
+    <nav class="nav">
+        <div class="name">Alejandra Rubalcava</div>
+        
+        <div class= "tabs">
+            <a href="./index.html">About</a> 
+            <a href="./portfolio.html">Portfolio</a> 
+            <a href="./contact.html">Contact</a>
+        </div> 
+    </nav>   
+    
+    <section class="main">
+        <!--content-->
+    <div class="form">
+        <form action="/action_page.php">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Max Powers">
+          
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="M.Powers@gmail.com">
+          
+            <label for="message">Message</label>
+            <input type="text" id="message" name="message" placeholder="Hello...">
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+   
+        <aside class="right">
+            <div class="headright">Connect  With Me</div>
+                <div class="icons">
+                    <img src="./assets/images/if_mark-github_298822.png">
+                    <img src="./assets/images/if_square-linkedin_317725.png">
+                    <img src="./assets/images/if_Stack_Overflow_1298710.png">
+                </div>
+        </aside>
+
+    </section> 
+    <!--footer-->
+    <footer class="foot">
+        <p>Copyright 2018 Alejandra Rubalcava</p>         
+    </footer>
 </body>
 </html>
