@@ -67,6 +67,7 @@ body {
 }
 .details {
   padding: 10px;
+  line-height: 1.4;
 }
 input[type=text], select {
   width: 100%;
