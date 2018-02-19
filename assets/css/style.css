@@ -46,14 +46,17 @@ body {
   margin-top: 40px;
   min-height: calc(100vh - 70px);
 }
-.left,form {   
+.left {   
   background-color: white;
   margin-top: 20px;
   padding: 10px;
-  width: 650px;
-  
+  width: 650px; 
+}
+.form {
+  padding: 20px 5px;
 }
 .headleft {
+  border-bottom: 1px dotted gray;
   color: black;
   font-size: 25px;
   padding: 10px;
@@ -97,14 +100,16 @@ input[type=submit]:hover {
   width: 270px;
 }
 .headright {
+  border-bottom: 1px dotted gray;
   color: black;
   font-size: 20px;
-  padding: 10px 10px 20px 10px;
+  padding: 10px;
   text-align: center;
 }
 .icons {
   display: flex;
   justify-content: space-evenly;
+  padding: 20px 10px;
 }
 .column {
   float: left;
@@ -129,18 +134,14 @@ input[type=submit]:hover {
   text-align: center;
   padding: 20px;
 }
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media (max-width: 960px) {
-  .left, .right {   
-    padding: 0;
-    width: 100%;  
+@media screen and (max-width: 640px) {
+    .header {
+      flex-direction: column;
   }
+    .main {
+      flex-direction: column;
 }
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media (max-width: 400px) {
-  .nav a {
+    .profpic {
       float: none;
-      width:100%;
   }
 }
