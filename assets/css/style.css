@@ -122,7 +122,7 @@ input[type=submit]:hover {
   position: relative;
 }
 .tilename {
-  background-color: rgba(120, 120, 120, 0.5);
+  background-color: rgba(120, 120, 120, 0.9);
   bottom: 20px;
   padding: 5px 15px 5px 15px;
   position: absolute;
